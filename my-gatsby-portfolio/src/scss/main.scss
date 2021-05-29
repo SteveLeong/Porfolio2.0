@@ -1,0 +1,34 @@
+body {
+	margin: 40px 9.6%;
+	background: radial-gradient(
+		74.83% 147.97% at 74.83% 50%,
+		#373c39 0%,
+		#292828 100%
+	);
+	font-family: Comfortaa;
+	font-style: normal;
+	color: #e6e6e6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+}
+
+h1 {
+	font-size: 32px;
+}
+
+p,
+a,
+button,
+li,
+i,
+span {
+	margin: 10px 0;
+	font-size: 18px;
+	font-weight: lighter;
+	line-height: 24px;
+}
