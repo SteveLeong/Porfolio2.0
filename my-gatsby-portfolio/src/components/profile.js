@@ -1,20 +1,27 @@
 import React from 'react';
 import profile from '../images/profile.png';
-import '../scss/profile.scss';
+import {
+	ProfileContainer,
+	ProfileImageContainer,
+	ProfileImgAesthetics,
+	ProfileImgAesthetics2,
+	ProfileImg,
+	ProfileDetails,
+} from '../styles/profile.styles';
 
 const Profile = ({ profileInfo }) => {
 	return (
-		<div className='profile_container'>
-			<div className='profile_img-container'>
-				<div className='profile_img-aesthetics-1'></div>
-				<div className='profile_img-aesthetics-2'></div>
-				<img className='profile_img' alt='profile-img' src={profile} />
-			</div>
-			<div className='profile_details'>
+		<ProfileContainer>
+			<ProfileImageContainer>
+				<ProfileImgAesthetics />
+				<ProfileImgAesthetics2 />
+				<ProfileImg alt='profile-img' src={profile} />
+			</ProfileImageContainer>
+			<ProfileDetails>
 				<h1>{profileInfo.name}</h1>
 				<p>{profileInfo.currentPosition}</p>
-			</div>
-		</div>
+			</ProfileDetails>
+		</ProfileContainer>
 	);
 };
 

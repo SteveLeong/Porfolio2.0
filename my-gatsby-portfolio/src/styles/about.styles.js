@@ -1,37 +1,39 @@
-.about_container {
-	align-self: center;
-}
+import styled from 'styled-components';
 
-.about_list {
+export const AboutContainer = styled.section`
+	align-self: center;
+`;
+
+export const AboutList = styled.ul`
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	list-style: none;
-}
+`;
 
-.about_list-item {
+export const AboutListItem = styled.li`
 	display: flex;
 	flex: 0 1 40%;
 	align-items: center;
 	margin: 20px;
-}
+`;
 
-.about_list-item_icon-container {
+export const IconContainer = styled.div`
 	margin: 0 10px;
 	height: 44px;
 	background: #292828;
 	border-radius: 50%;
 	border: 2px solid #caa83e;
-}
 
-.about_list-item_icon {
-	margin: 10px;
-	font-size: 24px;
-	color: #dabe67;
-}
+	svg {
+		margin: 10px;
+		font-size: 24px;
+		color: #dabe67;
+	}
+`;
 
-.about_list-item_desc {
+export const AboutListItemDesc = styled.p`
 	font-size: 14px;
 	line-height: 18px;
-}
+`;

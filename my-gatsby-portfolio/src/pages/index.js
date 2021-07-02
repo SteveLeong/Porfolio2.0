@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { Helmet } from 'react-helmet';
 import Container from '../components/container';
-import '../scss/main.scss';
+import '../styles/main.scss';
 // markup
 const IndexPage = () => {
 	return (
@@ -13,10 +13,6 @@ const IndexPage = () => {
 					rel='stylesheet'
 				/>
 			</Helmet>
-			<div className='background-aesthetics'>
-				<span className='box-1'></span>
-				<span className='box-2'></span>
-			</div>
 			<Container />
 		</main>
 	);
