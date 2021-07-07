@@ -1,17 +1,14 @@
-import * as React from 'react';
-
+import React from 'react';
 import { Helmet } from 'react-helmet';
-import Container from '../components/container';
-import '../styles/main.scss';
-// markup
+
+import Container from 'components/organisms/Container/Container';
+
+// eslint-disable-next-line arrow-body-style
 const IndexPage = () => {
 	return (
-		<main className='main_container'>
+		<main className="main_container">
 			<Helmet>
-				<link
-					href='https://fonts.googleapis.com/css?family=Comfortaa'
-					rel='stylesheet'
-				/>
+				<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" />
 			</Helmet>
 			<Container />
 		</main>

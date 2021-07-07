@@ -1,7 +1,5 @@
 import React from 'react';
 
-const Experience = () => {
-	return <div></div>;
-};
+const Experience = () => <div>Experience</div>;
 
 export default Experience;

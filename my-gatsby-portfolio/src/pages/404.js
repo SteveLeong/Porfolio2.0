@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 
 // styles
@@ -25,6 +25,7 @@ const codeStyles = {
 };
 
 // markup
+// eslint-disable-next-line arrow-body-style
 const NotFoundPage = () => {
 	return (
 		<main style={pageStyles}>
@@ -32,7 +33,7 @@ const NotFoundPage = () => {
 			<h1 style={headingStyles}>Page not found</h1>
 			<p style={paragraphStyles}>
 				Sorry{' '}
-				<span role='img' aria-label='Pensive emoji'>
+				<span role="img" aria-label="Pensive emoji">
 					😔
 				</span>{' '}
 				we couldn’t find what you were looking for.
@@ -40,13 +41,12 @@ const NotFoundPage = () => {
 				{process.env.NODE_ENV === 'development' ? (
 					<>
 						<br />
-						Try creating a page in{' '}
-						<code style={codeStyles}>src/pages/</code>.
+						Try creating a page in <code style={codeStyles}>src/pages/</code>.
 						<br />
 					</>
 				) : null}
 				<br />
-				<Link to='/'>Go home</Link>.
+				<Link to="/">Go home</Link>.
 			</p>
 		</main>
 	);

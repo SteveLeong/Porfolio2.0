@@ -1,0 +1,144 @@
+{
+    "parser": "babel-eslint",
+    "plugins": ["prettier", "import", "jsx-a11y", "react", "react-hooks"],
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:jsx-a11y/recommended",
+      "plugin:import/errors",
+      "plugin:import/warnings"
+    ],
+    "settings": {
+      "react": {
+        "version": "latest"
+      },
+      "import/resolver": {
+        "node": {
+          "moduleDirectory": ["node_modules", "src"]
+        }
+      }
+    },
+    "parserOptions": {
+      "ecmaVersion": 10,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "env": {
+      "es6": true,
+      "browser": true,
+      "node": true
+    },
+    "rules": {
+      /* Lint for React - React is not requied in scope for Next.js */
+      "react/react-in-jsx-scope": "off",
+  
+      /* Lint for custom/discussed rules */
+      "arrow-body-style": "error",
+      "no-console": "warn",
+      "no-var": "error",
+      "no-unused-vars": "warn",
+  
+      /* Lint for a11y errors */
+      // Next/Link requires a as a child but auto-fill href
+      "jsx-a11y/anchor-is-valid": "off",
+  
+      /* Lint for prettier errors */
+      "prettier/prettier": ["warn"],
+  
+      /* Lint for react errors */
+      "react/prop-types": "off",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "error",
+  
+      /* Lint for import rules */
+      // ensure named imports coupled with named exports
+      "import/named": "error",
+      // ensure imports point to files/modules that can be resolved
+      "import/no-unresolved": [
+        "error",
+        {
+          "ignore": [".svg"]
+        }
+      ],
+      // ensure default import coupled with default export
+      "import/default": "error",
+      // don"t allow import * from
+      "import/namespace": "error",
+      // disallow invalid exports, e.g. multiple defaults
+      "import/export": "error",
+      // do not allow a default import name to match a named export
+      "import/no-named-as-default": "error",
+      // warn on accessing default export property names that are also named exports
+      "import/no-named-as-default-member": "error",
+      // Forbid mutable exports
+      "import/no-mutable-exports": "error",
+      // disallow require()
+      "import/no-commonjs": "error",
+      // disallow AMD require/define
+      "import/no-amd": "error",
+      // disallow non-import statements appearing before import statements
+      "import/first": "error",
+      // disallow duplicate imports
+      "import/no-duplicates": "error",
+      // disallow namespace imports
+      "import/no-namespace": "error",
+      // ensure absolute imports are above relative imports and that unassigned imports are ignored
+      "import/order": [
+        "error",
+        {
+          "groups": [["builtin", "external"], "parent", "sibling", "index"],
+          "newlines-between": "always"
+        }
+      ],
+      // Require a newline after the last import/require in a group
+      "import/newline-after-import": "error",
+      // Forbid import of modules using absolute paths
+      "import/no-absolute-path": "error",
+      // Forbid require() calls with expressions
+      "import/no-dynamic-require": "warn",
+      // Forbid Webpack loader syntax in imports
+      "import/no-webpack-loader-syntax": "error",
+      // Prevent unassigned imports
+      "import/no-unassigned-import": "error",
+      // Prevent importing the default as if it were named
+      "import/no-named-default": "error",
+      // Forbid a module from importing itself
+      "import/no-self-import": "error",
+      // Forbid cyclical dependencies between modules
+      "import/no-cycle": ["error", { "maxDepth": 1 }],
+      // Ensures that there are no useless path segments
+      "import/no-useless-path-segments": "error"
+    },
+    "globals": {
+      "window": true,
+      "document": true,
+      "history": true,
+      "localStorage": true,
+      "fetch": true
+    },
+    "overrides": [
+      {
+        "files": [".*rc.js", "*-config.js"],
+        "env": {
+          "node": true,
+          "browser": false
+        },
+        "rules": {
+          "import/no-commonjs": "off"
+        }
+      }
+      //    {
+      //      "files": ["scripts/**/*.js"],
+      //      "env": {
+      //        "node": true,
+      //        "browser": false
+      //      },
+      //      "rules": {
+      //        "import/no-commonjs": "off",
+      //        "no-console": 0
+      //      }
+      //    }
+    ]
+  }

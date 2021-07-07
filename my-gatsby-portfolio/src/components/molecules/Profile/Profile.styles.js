@@ -18,8 +18,7 @@ export const ProfileImageContainer = styled.div`
 	background: #292828;
 	border-radius: 50%;
 	border: 2px solid #caa83e;
-	box-shadow: 0px 0px 25px 5px #000000,
-		inset 0px 0px 21px 5px rgba(0, 0, 0, 0.35);
+	box-shadow: 0px 0px 25px 5px #000000, inset 0px 0px 21px 5px rgba(0, 0, 0, 0.35);
 `;
 export const ProfileImgAesthetics = styled.div`
 	position: absolute;
