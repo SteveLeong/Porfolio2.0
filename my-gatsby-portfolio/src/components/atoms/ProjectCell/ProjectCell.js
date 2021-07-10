@@ -3,7 +3,7 @@ import { Slug, Fade } from 'mauerwerk';
 import { AiOutlineClose } from 'react-icons/ai';
 
 import { StyledCell } from './ProjectCell.styles';
-
+// https://github.com/drcmda/mauerwerk
 const ProjectCell = ({ toggle, name, height, description, css, maximized }) => (
 	<StyledCell
 		className="cell"
@@ -14,8 +14,13 @@ const ProjectCell = ({ toggle, name, height, description, css, maximized }) => (
 			<div className="details">
 				<Slug delay={600}>
 					<div className="circle" style={{ background: css }} />
-					{/* eslint-disable-next-line jsx-a11y/click-events-have-key-events */}
-					<div className="close" role="button" tabIndex={0} onClick={toggle}>
+					<div
+						className="close"
+						role="button"
+						tabIndex={0}
+						onClick={toggle}
+						onKeyDown={toggle}
+					>
 						<AiOutlineClose />
 					</div>
 					<h1>{name}</h1>
