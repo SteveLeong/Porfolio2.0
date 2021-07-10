@@ -1,12 +1,33 @@
 import styled from 'styled-components';
 
-export const ProfileContainer = styled.div`
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: center;
-	min-height: 200px;
+export const Box1 = styled.span`
+	height: 330px;
+	background: linear-gradient(90deg, #2a2a2a, #282828);
+	box-shadow: 0px 0px 5px 5px #2a2a2a;
+	transform: skewY(-8deg);
+	transform-origin: top left;
+	z-index: -10;
+	transition: transform 0.5s ease-in-out;
+`;
+
+export const Box2 = styled.span`
+	height: 230px;
+	background: linear-gradient(to left, #292929, #232323);
+	transform: skewY(16deg);
+	transform-origin: top right;
+	z-index: -20;
+`;
+
+export const BackgroundAesthetics = styled.div`
+	position: absolute;
+	top: 0;
+
+	span {
+		position: absolute;
+		top: -50px;
+		width: 100vw;
+		margin: 0;
+	}
 `;
 
 export const ProfileImageContainer = styled.div`
@@ -19,7 +40,9 @@ export const ProfileImageContainer = styled.div`
 	border-radius: 50%;
 	border: 2px solid #caa83e;
 	box-shadow: 0px 0px 25px 5px #000000, inset 0px 0px 21px 5px rgba(0, 0, 0, 0.35);
+	transition: all 0.5s ease-in-out;
 `;
+
 export const ProfileImgAesthetics = styled.div`
 	position: absolute;
 	top: 3px;
@@ -30,6 +53,7 @@ export const ProfileImgAesthetics = styled.div`
 	border-radius: 5px;
 	transform: rotate(-45deg);
 	z-index: -1;
+	transition: all 0.5s ease-in-out;
 `;
 
 export const ProfileImgAesthetics2 = styled.div`
@@ -42,13 +66,79 @@ export const ProfileImgAesthetics2 = styled.div`
 	border-radius: 5px;
 	transform: rotate(-45deg);
 	z-index: -2;
+	transition: all 0.5s ease-in-out;
 `;
+
 export const ProfileImg = styled.img`
 	width: 125px;
 	height: 125px;
 	border-radius: 50%;
+	transition: all 0.5s ease-in-out;
 `;
 
 export const ProfileDetails = styled.div`
 	margin: 0 20px;
+`;
+
+export const ProfileContainer = styled.div`
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	min-height: 200px;
+
+	transition: all 0.5s ease-in-out;
+
+	h1,
+	p {
+		transition: all 0.5s ease-in-out;
+	}
+
+	&.sticky {
+		position: fixed;
+		position: sticky;
+		top: 0;
+		align-items: flex-start;
+
+		${ProfileDetails} {
+			margin: 20px 0;
+		}
+
+		${ProfileImageContainer},
+		${ProfileImg} {
+			width: 50px;
+			height: 50px;
+		}
+
+		${ProfileImgAesthetics} {
+			width: 45px;
+			height: 45px;
+			transform: rotate(-90deg);
+		}
+
+		${ProfileImgAesthetics2} {
+			width: 60px;
+			height: 60px;
+			transform: rotate(-90deg);
+		}
+
+		${Box1} {
+			height: 100px;
+			transform: none;
+			top: 0;
+		}
+
+		${Box2} {
+			visibility: hidden;
+		}
+
+		h1 {
+			font-size: 20px;
+		}
+
+		p {
+			font-size: 12px;
+		}
+	}
 `;

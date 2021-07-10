@@ -13,12 +13,8 @@ const Container = () => (
 		<GlobalStyles />
 		<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" />
 		<main>
-			<BackgroundAesthetics>
-				<Box1 />
-				<Box2 />
-			</BackgroundAesthetics>
 			<ContentContainer>
-				<Profile profileInfo={profileInfo} />
+				<Profile profileInfo={profileInfo} sticky />
 				<About />
 				<Projects />
 			</ContentContainer>
