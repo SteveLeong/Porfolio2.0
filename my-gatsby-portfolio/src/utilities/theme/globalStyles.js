@@ -4,13 +4,13 @@ import styleReset from 'utilities/theme/styleReset';
 
 export const GlobalStyles = createGlobalStyle`
 	${styleReset};
-
+	
 	html, body {
 		font-family: Comfortaa;
 		font-style: normal;
 		box-sizing: border-box;
 	}
-
+	
 	body {
 		background: radial-gradient(
 			74.83% 147.97% at 74.83% 50%,
@@ -47,7 +47,7 @@ export const GlobalStyles = createGlobalStyle`
 
 	section {
 		display: inline-block;
-		margin: 40px 15px;
-		max-width: 1150px;
+		margin: 40px 20px;
+		width: calc(100vw - 40px)
 	}
 `;

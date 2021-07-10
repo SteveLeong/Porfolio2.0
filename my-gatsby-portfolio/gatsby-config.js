@@ -34,8 +34,6 @@ module.exports = {
 			options: {
 				src: path.join(__dirname, 'src'),
 				components: path.join(__dirname, 'src/components'),
-				molecules: path.join(__dirname, 'src/components/molecules'),
-				atoms: path.join(__dirname, 'src/components/atoms'),
 				data: path.join(__dirname, 'src/data'),
 				assets: path.join(__dirname, 'src/assets'),
 				store: path.join(__dirname, 'src/store'),

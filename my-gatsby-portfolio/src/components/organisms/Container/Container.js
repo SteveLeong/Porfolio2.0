@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BackgroundAesthetics, Box1, Box2, ContentContainer } from './Container.styles';
+import { ContentContainer, Content } from './Container.styles';
 
 import Profile from 'components/molecules/Profile/Profile';
 import About from 'components/molecules/About/About';
@@ -15,8 +15,10 @@ const Container = () => (
 		<main>
 			<ContentContainer>
 				<Profile profileInfo={profileInfo} sticky />
-				<About />
-				<Projects />
+				<Content>
+					<About />
+					<Projects />
+				</Content>
 			</ContentContainer>
 		</main>
 	</>

@@ -40,7 +40,7 @@ export const ProfileImageContainer = styled.div`
 	border-radius: 50%;
 	border: 2px solid #caa83e;
 	box-shadow: 0px 0px 25px 5px #000000, inset 0px 0px 21px 5px rgba(0, 0, 0, 0.35);
-	transition: all 0.5s ease-in-out;
+	transition: all 0.4s ease-in-out;
 `;
 
 export const ProfileImgAesthetics = styled.div`
@@ -53,7 +53,7 @@ export const ProfileImgAesthetics = styled.div`
 	border-radius: 5px;
 	transform: rotate(-45deg);
 	z-index: -1;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.4s ease-in-out;
 `;
 
 export const ProfileImgAesthetics2 = styled.div`
@@ -66,14 +66,14 @@ export const ProfileImgAesthetics2 = styled.div`
 	border-radius: 5px;
 	transform: rotate(-45deg);
 	z-index: -2;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.4s ease-in-out;
 `;
 
 export const ProfileImg = styled.img`
 	width: 125px;
 	height: 125px;
 	border-radius: 50%;
-	transition: all 0.5s ease-in-out;
+	transition: all 0.4s ease-in-out;
 `;
 
 export const ProfileDetails = styled.div`
@@ -87,12 +87,13 @@ export const ProfileContainer = styled.div`
 	justify-content: flex-start;
 	align-items: center;
 	min-height: 200px;
+	z-index: 1005;
 
-	transition: all 0.5s ease-in-out;
-
+	transition: all 0.4s ease-in-out;
+	pointer-events: none;
 	h1,
 	p {
-		transition: all 0.5s ease-in-out;
+		transition: all 0.4s ease-in-out;
 	}
 
 	&.sticky {
@@ -127,6 +128,7 @@ export const ProfileContainer = styled.div`
 			height: 100px;
 			transform: none;
 			top: 0;
+			box-shadow: 0px 0px 1px 1px #2a2a2a;
 		}
 
 		${Box2} {

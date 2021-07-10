@@ -34,7 +34,7 @@ const Profile = ({ profileInfo, sticky }) => {
 				}
 			};
 			if (profileOffsetHeight === 0) {
-				setProfileOffsetHeight(current.offsetTop);
+				setProfileOffsetHeight(Math.max(current.offsetTop, 75));
 			}
 			window.addEventListener('scroll', handler);
 			return () => window.removeEventListener('scroll', handler);

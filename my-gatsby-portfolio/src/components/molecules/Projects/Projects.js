@@ -1,7 +1,25 @@
 import React from 'react';
 
-import { ProjectContainer } from './Projects.styles';
+import { ProjectContainer, ProjectGrid } from './Projects.styles';
 
-const Projects = () => <ProjectContainer>Projects</ProjectContainer>;
+import ProjectCell from 'components/atoms/ProjectCell/ProjectCell';
+import data from 'data/projects';
+
+const Projects = () => (
+	<ProjectContainer>
+		<ProjectGrid
+			className="grid"
+			data={data}
+			keys={(d) => d.name}
+			heights={(d) => d.height}
+			lockScroll={true}
+			columns={2}
+		>
+			{(data, maximized, toggle) => (
+				<ProjectCell {...data} maximized={maximized} toggle={toggle} />
+			)}
+		</ProjectGrid>
+	</ProjectContainer>
+);
 
 export default Projects;
