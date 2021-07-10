@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "target": "es2017",
+      "allowSyntheticDefaultImports": false,
+      "baseUrl": "./",
+      "module": "commonjs",
+      "paths": {
+        "components*": ["src/components/*"],
+        "data*": ["src/data/*"],
+        "assets*": ["src/assets/*"],
+        "store*": ["src/store/*"],
+        "static*": ["src/static/*"],
+        "utilities*": ["src/utilities/*"],
+        "pages*": ["src/pages/*"],
+        "hooks*": ["src/hooks/*"]
+      }
+    },
+    "exclude": ["node_modules", "dist"]
+  }
