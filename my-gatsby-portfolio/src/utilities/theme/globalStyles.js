@@ -47,7 +47,8 @@ export const GlobalStyles = createGlobalStyle`
 
 	section {
 		display: inline-block;
-		margin: 40px 20px;
-		width: calc(100vw - 40px)
+		margin: 40px 0;
+		width: 100%;
+		box-sizing: border-box;
 	}
 `;

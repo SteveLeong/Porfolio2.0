@@ -8,4 +8,5 @@ export const ContentContainer = styled.div`
 export const Content = styled.div`
 	display: flex;
 	flex-direction: column;
+	margin: 0 10%;
 `;
