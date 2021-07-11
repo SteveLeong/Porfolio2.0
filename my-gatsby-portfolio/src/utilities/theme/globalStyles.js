@@ -12,11 +12,7 @@ export const GlobalStyles = createGlobalStyle`
 	}
 	
 	body {
-		background: radial-gradient(
-			74.83% 147.97% at 74.83% 50%,
-			#373c39 0%,
-			#292828 100%
-		);
+		background: linear-gradient(120deg, #0A0B0A 0%, #373c39 100%);
 	
 		color: #e6e6e6;
 		overflow-x: hidden;

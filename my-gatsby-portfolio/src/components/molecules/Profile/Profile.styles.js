@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const Box1 = styled.span`
 	height: 330px;
-	background: linear-gradient(90deg, #2a2a2a, #282828);
-	box-shadow: 0px 0px 5px 5px #2a2a2a;
+	background: linear-gradient(120deg, #0a0b0a 0%, #373c39 100%);
+	box-shadow: 0px 0px 5px 5px #1d201d;
 	opacity: 1;
 	transform: skewY(-8deg);
 	transform-origin: top left;
@@ -13,7 +13,7 @@ export const Box1 = styled.span`
 
 export const Box2 = styled.span`
 	height: 230px;
-	background: linear-gradient(to left, #2a2a2a, #232323);
+	background: linear-gradient(120deg, #0a0b0a 0%, #373c39 100%);
 	box-shadow: 0px 0px 5px 5px #2a2a2a;
 	opacity: 1;
 	transform: skewY(16deg);
@@ -36,7 +36,7 @@ export const BackgroundAesthetics = styled.div`
 
 export const ProfileImageContainer = styled.div`
 	position: relative;
-	margin: 20px;
+	margin: 20px 20px 20px 40px;
 	width: 125px;
 	height: 125px;
 
@@ -135,7 +135,7 @@ export const ProfileContainer = styled.div`
 		${Box2} {
 			top: 0;
 			height: 100px;
-			box-shadow: 0px 0px 1px 1px #2a2a2a;
+			box-shadow: 0px 0px 1px 1px #0a0b0a;
 			opacity: 0.9;
 			transform: none;
 		}

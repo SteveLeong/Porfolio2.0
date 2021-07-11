@@ -9,6 +9,7 @@ const ProjectCell = ({
 	name,
 	height,
 	description,
+	techStack,
 	dark,
 	light,
 	coverImg,
@@ -46,6 +47,7 @@ const ProjectCell = ({
 							<AiOutlineClose />
 						</div>
 						<h1>{name}</h1>
+						<span>{techStack}</span>
 						<p>{description}</p>
 					</Slug>
 				</div>

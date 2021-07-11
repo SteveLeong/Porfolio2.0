@@ -4,7 +4,6 @@ export const StyledCell = styled.div`
 	position: relative;
 	width: 100%;
 	height: 100%;
-	color: #777777;
 	text-transform: uppercase;
 	font-size: 10px;
 
@@ -52,21 +51,29 @@ export const StyledCell = styled.div`
 	}
 
 	.details h1 {
-		color: #caa83e;
+		color: #e6e6e6;
 		font-size: 36px;
 		line-height: 36px;
 		font-weight: 600;
 		margin: 0;
 		padding: 0;
-		max-width: 250px;
 	}
 
 	.details p {
-		color: thistle;
-		font-size: 26px;
-		line-height: 26px;
+		color: #e6e6e6;
+		font-size: 18px;
+		line-height: 18px;
 		margin: 0;
 		padding-top: 15px;
+		text-transform: none;
+	}
+
+	.details span {
+		color: #b8b8b8;
+		font-size: 14px;
+		line-height: 14px;
+		font-weight: 600;
+		text-transform: none;
 	}
 
 	.circle {

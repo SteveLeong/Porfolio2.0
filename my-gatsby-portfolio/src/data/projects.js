@@ -1,7 +1,9 @@
 export default [
 	{
 		name: 'Matrix Vision',
-		description: '#a8edea → #fed6e3',
+		description:
+			'Originally this was a final project I did for an Art class on Net Art, done entirely in javascript. But I decided to exercise my newly gained knowledge and convert it to a React application. In doing so I learned how to split up a project into components and the React lifecycle.',
+		techStack: 'React, Javascript, HTML5, CSS',
 		light: 'linear-gradient(to top, #09814A 0%, #D0F4DE 100%)',
 		dark: 'linear-gradient(to top, #292828 0%, #373C39 100%)',
 		height: 450,
@@ -12,6 +14,7 @@ export default [
 	{
 		name: '2020 Nissan Pathfinder',
 		description: '#e0c3fc → #8ec5fc',
+		techStack: 'React, Gatsby, Javascript, HTML5, CSS, styled-components, threejs',
 		light: 'linear-gradient(120deg, #df949e 0%, #C3423F 100%)',
 		dark: 'linear-gradient(120deg, #292828 0%, #373C39 100%)',
 		height: 400,
@@ -21,6 +24,7 @@ export default [
 	{
 		name: "Nissan Owner's Portal",
 		description: '#d299c2 → #fef9d7',
+		techStack: 'AEM, Javascript, JQuery, HTML5, CSS',
 		light: 'linear-gradient(to top, #d299c2 0%, #fef9d7 100%)',
 		dark: 'linear-gradient(to top, #292828 0%, #373C39 100%)',
 		height: 350,
@@ -29,6 +33,7 @@ export default [
 	{
 		name: '2020 Nissan Sentra',
 		description: '#f093fb → #f5576c',
+		techStack: 'React, Gatsby, Javascript, HTML5, CSS, styled-components',
 		light: 'linear-gradient(120deg, #E4572E 0%, #e29b17 100%)',
 		dark: 'linear-gradient(120deg, #292828 0%, #373C39 100%)',
 		height: 450,
@@ -38,6 +43,7 @@ export default [
 	{
 		name: 'What Car Should I Buy?',
 		description: '#5ee7df → #b490ca',
+		techStack: 'React, Gatsby, Javascript, HTML5, CSS, styled-components',
 		light: 'linear-gradient(to top, #2c9b93 0%, #b490ca 100%)',
 		dark: 'linear-gradient(to top, #292828 0%, #373C39 100%)',
 		height: 300,
@@ -46,6 +52,7 @@ export default [
 	{
 		name: '2022 Nissan Titan',
 		description: '#fdfbfb → #ebedee',
+		techStack: 'React, React-static, Javascript, HTML5, CSS, Storybook, Lerna',
 		light: 'linear-gradient(-225deg, #22352f 0%, #1b0f19 100%)',
 		dark: 'linear-gradient(-225deg, #292828 0%, #373C39 100%)',
 		height: 400,
