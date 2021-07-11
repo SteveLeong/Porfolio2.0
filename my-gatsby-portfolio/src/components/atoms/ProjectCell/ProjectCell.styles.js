@@ -8,6 +8,8 @@ export const StyledCell = styled.div`
 	text-transform: uppercase;
 	font-size: 10px;
 
+	${({ isReleased }) => !isReleased && `opacity: 0.3;`}
+
 	.default {
 		position: absolute;
 		width: 100%;
@@ -19,13 +21,27 @@ export const StyledCell = styled.div`
 		box-sizing: border-box;
 	}
 
+	.default h1 {
+		font-size: 24px;
+		line-height: 24px;
+		font-weight: 600;
+		color: #e6e6e6;
+	}
+
+	.default img {
+		position: absolute;
+		z-index: -1;
+		object-fit: cover;
+		border: 2px solid #caa83e;
+	}
+
 	.details {
 		position: absolute;
 		bottom: 0px;
 		left: 0px;
 		width: 100%;
 		height: 100%;
-		background: #ffffffa0;
+		background: #292828;
 		color: white;
 		padding: 40px;
 		font-weight: 100;
@@ -36,7 +52,7 @@ export const StyledCell = styled.div`
 	}
 
 	.details h1 {
-		color: #ca6a9a;
+		color: #caa83e;
 		font-size: 36px;
 		line-height: 36px;
 		font-weight: 600;
@@ -55,12 +71,16 @@ export const StyledCell = styled.div`
 
 	.circle {
 		position: absolute;
-		top: calc(50% - 140px);
-		left: calc(50% - 140px);
-		width: 280px;
-		height: 280px;
+
 		border-radius: 50%;
-		box-shadow: 0px 20px 60px -10px rgba(0, 0, 0, 0.2);
+		box-shadow: 0px 20px 60px -10px rgba(0, 0, 0, 0.9);
+
+		${({ height }) => `
+		top: calc(45% - ${height / 2}px);
+		left: calc(50% - ${height / 2}px);
+		width: ${height}px;
+		height: ${height}px;
+		`}
 	}
 
 	.close {
