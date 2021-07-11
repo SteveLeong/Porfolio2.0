@@ -4,18 +4,22 @@ export const Box1 = styled.span`
 	height: 330px;
 	background: linear-gradient(90deg, #2a2a2a, #282828);
 	box-shadow: 0px 0px 5px 5px #2a2a2a;
+	opacity: 1;
 	transform: skewY(-8deg);
 	transform-origin: top left;
 	z-index: -10;
-	transition: transform 0.5s ease-in-out;
+	transition: opacity 0.7s ease-in-out;
 `;
 
 export const Box2 = styled.span`
 	height: 230px;
-	background: linear-gradient(to left, #292929, #232323);
+	background: linear-gradient(to left, #2a2a2a, #232323);
+	box-shadow: 0px 0px 5px 5px #2a2a2a;
+	opacity: 1;
 	transform: skewY(16deg);
 	transform-origin: top right;
 	z-index: -20;
+	transition: all 0.3s ease-in-out;
 `;
 
 export const BackgroundAesthetics = styled.div`
@@ -125,14 +129,15 @@ export const ProfileContainer = styled.div`
 		}
 
 		${Box1} {
-			height: 100px;
-			transform: none;
-			top: 0;
-			box-shadow: 0px 0px 1px 1px #2a2a2a;
+			opacity: 0;
 		}
 
 		${Box2} {
-			visibility: hidden;
+			top: 0;
+			height: 100px;
+			box-shadow: 0px 0px 1px 1px #2a2a2a;
+			opacity: 0.9;
+			transform: none;
 		}
 
 		h1 {
