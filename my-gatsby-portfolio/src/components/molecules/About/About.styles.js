@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const AboutContainer = styled.section`
 	align-self: center;
+	max-width: 1200px;
 `;
 
 export const AboutList = styled.ul`
