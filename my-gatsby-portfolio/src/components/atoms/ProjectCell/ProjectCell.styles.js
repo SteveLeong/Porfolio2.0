@@ -6,6 +6,7 @@ export const StyledCell = styled.div`
 	height: 100%;
 	text-transform: uppercase;
 	font-size: 10px;
+	border-radius: 20px;
 
 	${({ isReleased }) => !isReleased && `opacity: 0.3;`}
 

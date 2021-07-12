@@ -14,6 +14,7 @@ const Projects = () => (
 			heights={(d) => d.height}
 			lockScroll={true}
 			columns={2}
+			margin={20}
 		>
 			{(data, maximized, toggle) => (
 				<ProjectCell {...data} maximized={maximized} toggle={toggle} />

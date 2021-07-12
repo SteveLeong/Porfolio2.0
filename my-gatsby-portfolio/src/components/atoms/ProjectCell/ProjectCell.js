@@ -25,7 +25,7 @@ const ProjectCell = ({
 
 	const isReleased = status !== 'In Progress';
 	const cursorType = !maximized ? (!isReleased ? 'not-allowed' : 'pointer') : 'auto';
-	console.log('coverImg :>> ', coverImg);
+
 	return (
 		<StyledCell
 			className="cell"

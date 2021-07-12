@@ -32,7 +32,7 @@ export default [
 		techStack: 'AEM, Javascript, JQuery, HTML5, CSS',
 		light: 'linear-gradient(to top, #d299c2 0%, #fef9d7 100%)',
 		dark: 'linear-gradient(to top, #292828 0%, #373C39 100%)',
-		height: 350,
+		height: 330,
 		status: 'Released',
 		url: 'https://www.nissanusa.com/mynissan',
 	},
