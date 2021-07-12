@@ -36,4 +36,5 @@ export const IconContainer = styled.div`
 export const AboutListItemDesc = styled.p`
 	font-size: 14px;
 	line-height: 18px;
+	font-weight: 600;
 `;

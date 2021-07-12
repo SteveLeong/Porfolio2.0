@@ -27,7 +27,7 @@ export const StyledCell = styled.div`
 		color: #e6e6e6;
 	}
 
-	.default img {
+	img {
 		position: absolute;
 		z-index: -1;
 		object-fit: cover;
@@ -51,12 +51,19 @@ export const StyledCell = styled.div`
 	}
 
 	.details h1 {
+		display: flex;
 		color: #e6e6e6;
 		font-size: 36px;
 		line-height: 36px;
 		font-weight: 600;
 		margin: 0;
 		padding: 0;
+	}
+
+	.details a {
+		margin: 0 10px;
+		font-size: 36px;
+		color: #e6e6e6;
 	}
 
 	.details p {
@@ -74,6 +81,13 @@ export const StyledCell = styled.div`
 		line-height: 14px;
 		font-weight: 600;
 		text-transform: none;
+	}
+
+	.details .circle {
+		top: calc(40% - 200px);
+		left: calc(50% - 200px);
+		width: 400px;
+		height: 400px;
 	}
 
 	.circle {
@@ -98,5 +112,15 @@ export const StyledCell = styled.div`
 		color: #777777;
 		z-index: 1006;
 		cursor: pointer;
+	}
+
+	.in-progress {
+		position: absolute;
+		top: 35%;
+		width: 100%;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 36px;
+		color: #e6e6e6;
 	}
 `;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Slug, Fade } from 'mauerwerk';
-import { AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineClose, AiOutlineLink } from 'react-icons/ai';
 
 import { StyledCell } from './ProjectCell.styles';
 // https://github.com/drcmda/mauerwerk
@@ -14,6 +14,7 @@ const ProjectCell = ({
 	light,
 	coverImg,
 	status,
+	url,
 	maximized,
 }) => {
 	const [image, setImage] = useState(null);
@@ -36,7 +37,12 @@ const ProjectCell = ({
 			<Fade show={maximized} delay={maximized ? 400 : 0}>
 				<div className="details">
 					<Slug delay={600}>
-						<div className="circle" style={{ background: light }} />
+						{image ? (
+							<img className="circle" src={image} alt={coverImg} />
+						) : (
+							<div className="circle" style={{ background: light }} />
+						)}
+
 						<div
 							className="close"
 							role="button"
@@ -46,7 +52,14 @@ const ProjectCell = ({
 						>
 							<AiOutlineClose />
 						</div>
-						<h1>{name}</h1>
+						<h1>
+							{name}{' '}
+							{url && (
+								<a href={url} target="_blank" rel="noreferrer">
+									<AiOutlineLink />
+								</a>
+							)}
+						</h1>
 						<span>{techStack}</span>
 						<p>{description}</p>
 					</Slug>
@@ -60,10 +73,11 @@ const ProjectCell = ({
 				delay={maximized ? 0 : 400}
 			>
 				<div className="default">
-					{image && <img className="circle" src={image} alt={coverImg}></img>}
+					{image && <img className="circle" src={image} alt={coverImg} />}
 					<h1>{name}</h1>
 				</div>
 			</Fade>
+			{!isReleased && <p className="in-progress">{status}</p>}
 		</StyledCell>
 	);
 };

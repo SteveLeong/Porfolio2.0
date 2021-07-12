@@ -8,7 +8,7 @@ export const Box1 = styled.span`
 	transform: skewY(-8deg);
 	transform-origin: top left;
 	z-index: -10;
-	transition: opacity 0.7s ease-in-out;
+	transition: opacity 0.5s ease-in-out;
 `;
 
 export const Box2 = styled.span`
@@ -135,7 +135,7 @@ export const ProfileContainer = styled.div`
 		${Box2} {
 			top: 0;
 			height: 100px;
-			box-shadow: 0px 0px 1px 1px #0a0b0a;
+			box-shadow: 0px 0px 1px 1px #1d201d;
 			opacity: 0.9;
 			transform: none;
 		}
