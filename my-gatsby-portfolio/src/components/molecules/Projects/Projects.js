@@ -4,6 +4,7 @@ import { ProjectContainer, ProjectGrid } from './Projects.styles';
 
 import ProjectCell from 'components/atoms/ProjectCell/ProjectCell';
 import data from 'data/projects';
+
 // https://github.com/drcmda/mauerwerk
 const Projects = () => (
 	<ProjectContainer>

@@ -3,7 +3,8 @@ import { Grid } from 'mauerwerk';
 
 export const ProjectContainer = styled.section`
 	height: calc(100vh - 150px);
-	max-height: 85vh;
+	max-height: 78vh;
+	margin: 40px 0 10px;
 `;
 
 export const ProjectGrid = styled(Grid)`

@@ -123,6 +123,7 @@ export const ProfileContainer = styled.div`
 		}
 
 		${ProfileImgAesthetics2} {
+			left: -5px;
 			width: 60px;
 			height: 60px;
 			transform: rotate(-90deg);
